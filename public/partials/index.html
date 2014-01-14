@@ -1,0 +1,31 @@
+<div ng-if="user">
+	<div class="chat-lobby" ng-controller="ChatCtr">
+		<div class="chat-message" id="chat_board">
+			<ul class="msg-list">
+				<li ng-repeat="msg in chatmsgs">
+					<div class="row">
+						<div class="user-chat-avata col-xs-1">
+							<img ng-src="{{user.profile.gravata_url}}" />
+						</div>
+						<div class="message col-xs-10">
+								<p class="time">{{msg.create_on | date:'medium'}}</p>
+							<p>
+								<b>{{msg.user.name}}</b>
+							</p>
+							<p>{{msg.msg}}</p>
+						</div>
+					</div>
+					
+					
+				</li>
+			</ul>
+		</div>
+		<div class="chat-input">
+			<input type="text" ng-model="msg" class="form-control" ng-keypress="chat(msg,$event)">
+		</div>
+	</div>
+</div>
+<div ng-if="!user">
+	{{user.username}}
+	You have to login before go into the battle
+</div>

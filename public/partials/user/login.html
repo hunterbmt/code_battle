@@ -1,0 +1,30 @@
+<div class="user-audit">
+	<div class="form-wrap">
+		<div class="row">
+			<div class="form-header">
+				<i class="fa fa-user"></i>
+			</div>
+			<div class="form-main">
+				<form name="signinform" novalidate>
+					<div class="form-group">
+						<input type="text" class="form-control" ng-model="user.username" placeholder="username" required/>
+						<input type="password" class="form-control" ng-model="user.password" placeholder="password" required/>
+					</div>
+					<a href="" class="btn btn-block btn-signin" ng-click="loginUser(user)" ng-disabled="signinform.$invalid">Sign In</a>
+				</form>
+			</div>
+			<div class="form-footer">
+				<div class="row">
+					<div class="col-xs-7">
+						<i class="fa fa-unlock-alt"></i>
+						<a href="#password_recovery">Forgot password?</a>
+					</div>
+					<div class="col-xs-5">
+						<i class="fa fa-check"></i>
+						<a href="" ng-click="$parent.currentView = 'signup'">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+<head>
+  <title>Code battle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <ng-include src="'partials/header.html'"></ng-include>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" ng-view></div>
+      <div class="col-md-4" ng-controller="UserCtr">
+         <div ng-if="!$parent.user">
+              <div ng-init="currentView ='login'">
+                  <div ng-if="currentView === 'login'" login-view>
+                  </div>
+                  <div ng-if="currentView === 'signup'" signup-view>
+                  </div>
+               </div>
+          </div>
+          <div ng-if="$parent.user">
+            <div class="user-profile" profile-view>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
