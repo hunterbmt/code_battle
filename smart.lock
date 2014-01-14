@@ -3,7 +3,7 @@
   "dependencies": {
     "basePackages": {
       "angularjs": {
-        "git": "https://github.com/hexorx/Meteor_angularjs.git",
+        "git": "https://github.com/hunterbmt/Meteor-angularjs.git",
         "branch": "master"
       },
       "bootstrap3-less": {},
@@ -13,9 +13,8 @@
     },
     "packages": {
       "angularjs": {
-        "git": "https://github.com/hexorx/Meteor_angularjs.git",
-        "branch": "master",
-        "commit": "34024cf815b4de54d013a036ed50962018055c5a"
+        "git": "https://github.com/hunterbmt/Meteor-angularjs.git",
+        "branch": "master"
       },
       "bootstrap3-less": {
         "git": "https://github.com/eprochasson/bootstrap3-less",

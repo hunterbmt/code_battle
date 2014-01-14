@@ -1,7 +1,7 @@
 {
   "packages": {
     "angularjs": {
-      "git": "https://github.com/hexorx/Meteor_angularjs.git"
+      "git": "https://github.com/hunterbmt/Meteor-angularjs.git"
     },
     "bootstrap3-less": {},
     "font-awesome-4-less": {},
